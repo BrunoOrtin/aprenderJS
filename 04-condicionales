@@ -1,0 +1,56 @@
+// if, elfe is , else
+
+let age = 37n;
+
+if (age === 18) {
+  console.log("su edad es 18");
+}
+
+if (age >= 18) {
+  console.log("es mayor de edad ");
+} else {
+  console.log("eres un pringao");
+}
+
+// operador ternario
+
+const mensaje = age == 37 ? "la edad es 37" : "la edad no es 37";
+
+console.log(mensaje);
+
+// switch
+
+let day = 7;
+let dayName;
+
+switch (day) {
+  case 0:
+    dayName = "lunes";
+    break;
+  case 1:
+    dayName = "martes";
+    break;
+  case 2:
+    dayName = "miercoles";
+    break;
+  case 3:
+    dayName = "jueves";
+    break;
+  case 4:
+    dayName = "viernes";
+    break;
+  case 5:
+    dayName = "sabado";
+    break;
+  case 6:
+    dayName = "domingo";
+
+  default:
+    dayName = "numero de dia incorrecto";
+}
+
+console.log("el dia es: " + dayName);
+
+// ejercicios
+
+

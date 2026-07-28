@@ -1,0 +1,79 @@
+// if/else/else if/ternaria
+
+// 1. Imprime por consola tu nombre si una variable toma su valor
+let name = "pepe";
+
+if (name === "Bruno") {
+  console.log("1.tu nombre es " + name);
+} else {
+  console.log("1. tu nombre es otro");
+}
+console.log();
+// 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
+
+let usuario = "Bruno";
+let contraseña = "123";
+
+if (usuario === "Bruno" && contraseña == 123) {
+  console.log("2.usuario y contraseña coinciden");
+} else {
+  console.log("2.error de usuario");
+}
+console.log();
+
+// 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+
+let num = 0;
+
+if (num > 0) {
+  console.log("3. numero positio");
+} else if (num < 0) {
+  console.log("3. numero negativo");
+} else {
+  console.log("3. el numero es 0");
+}
+console.log();
+
+// 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+
+let edad = 18;
+let resto;
+
+if (edad >= 18) {
+  console.log("4 . puede votar  por ser mayor de edad ");
+} else {
+  let resto = 18 - edad;
+  console.log("4. no puede votar por ser menor, te faltan " + resto + " años");
+}
+console.log();
+// 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
+//    dependiendo de la edad
+let tipo
+
+edad >= 18 ? tipo = "adulto" : tipo = "menor";
+
+console.log("5. es: " + tipo)
+// 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+let mes = 0;
+
+if(mes === 12 || mes === 1 || mes === 2){
+  console.log("estamos en invierno")
+}else if (mes === 3 || mes === 4 || mes === 5){
+  console.log("estamos en primavera")
+}else if (mes === 6 || mes === 7 || mes === 8){
+  console.log("estamos en verano")}
+  else if (mes === 9 || mes === 10 || mes === 11){
+  console.log("estamos en otoño")}
+  else{console.log("error al seleccionar mes ")}
+
+  console.log()
+// 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+
+
+// switch
+
+// 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+
+// 9. Usa un switch para hacer de nuevo el ejercicio 6
+
+// 10. Usa un switch para hacer de nuevo el ejercicio 7
