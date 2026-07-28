@@ -53,27 +53,176 @@ let tipo
 edad >= 18 ? tipo = "adulto" : tipo = "menor";
 
 console.log("5. es: " + tipo)
+console.log()
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
-let mes = 0;
+let mes = 12;
 
 if(mes === 12 || mes === 1 || mes === 2){
-  console.log("estamos en invierno")
+  console.log("6. estamos en invierno")
 }else if (mes === 3 || mes === 4 || mes === 5){
-  console.log("estamos en primavera")
+  console.log("6. estamos en primavera")
 }else if (mes === 6 || mes === 7 || mes === 8){
-  console.log("estamos en verano")}
+  console.log("6. estamos en verano")}
   else if (mes === 9 || mes === 10 || mes === 11){
-  console.log("estamos en otoño")}
-  else{console.log("error al seleccionar mes ")}
+  console.log("6. estamos en otoño")}
+  else{console.log("6. error al seleccionar mes ")}
 
   console.log()
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+if (mes === 1 || mes === 3 || mes === 5 || mes === 7 || mes === 8 || mes === 10 || mes === 12){
+  console.log("7. el mes " + mes +" tiene: 31 dias ")
+}else if (mes === 4 || mes === 6 || mes === 9 || mes === 11 ){
+  console.log("7. el mes " + mes +" tiene: 30 dias ")
+}else if (mes === 2 ){
+  console.log("7. Febrero tiene 28 o 29 dias ")
+}else {console.log("7. no coincide con ningun mes joputa")}
 
-
+console.log()
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+let idioma;
+let saludo;
+
+console.log(`elige un idioma:
+  0- Español
+  1- Frances
+  2- Italiano`)
+  
+  let eleccion = 2
+  
+switch (eleccion){
+
+case 0:
+  idioma = 0
+  break
+case 1 : 
+  idioma = 1
+  break 
+case 2 :
+  idioma = 2    
+  break
+default:
+  idioma = "idioma no encontrado"
+}
+
+switch (idioma){
+  case 0:
+    saludo = "Hola, buenos dias "
+    break
+    case 1 : 
+    saludo = "bon jour"
+    break 
+    case 2 :
+      saludo = "bon jorno" 
+      break
+      
+default: 
+saludo = "idioma incorrecto"
+}
+
+console.log(saludo);
+console.log()
 
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 
+let estacion
+
+switch (mes){
+
+case 1:
+  estacion = "Enero estacion: invierno"
+  break
+case 2 : 
+  estacion = "Febrero estacion: invierno"
+  break 
+case 3:
+  estacion = "Marzo estacion: primavera"
+  break
+  case 4:
+  estacion = "Abril estacion: primavera"
+  break
+  case 5:
+  estacion = "Mayo estacion: primavera "
+  break
+  case 6:
+  estacion = "Junio estacion: verano"
+  break
+  case 7:
+  estacion = "Julio estacion: verano"
+  break
+  case 8:
+  estacion = "Agosto estacion: verano"
+  break
+  case 9:
+  estacion = "Sep estacion: verano"
+  break
+  case 10:
+  estacion = "Octubre estacion: otoño"
+  break
+  case 11:
+  estacion = "Noviembre estacion: otoño"
+  break
+  case 12:
+  estacion = "Dicimebre estacion: invierno"
+  break
+  
+
+default:
+  estacion = "Mes erroneo"
+
+}
+
+console.log(estacion);
+console.log()
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+
+let dias
+
+switch (mes){
+
+case 1:
+  dias  = "enero tiene 31  "
+  break
+case 2 : 
+  dias = "febreo tiene 28 o 29  "
+  break 
+case 3:
+  dias = "Marzo tiene 31  "
+  break
+  case 4:
+  dias = "Abril 30  "
+  break
+  case 5:
+  dias = "Mayo 31 "
+  break
+  case 6:
+  dias = "Junio 30"
+  break
+  case 7:
+  dias = "Julio 31"
+  break
+  case 8:
+  dias = "Agosto 31"
+  break
+  case 9:
+  dias = "Sep 30"
+  break
+  case 10:
+  dias = "Oct 31"
+  break
+  case 11:
+  dias = "Nov 30"
+  break
+  case 12:
+  dias = "Dci 31"
+  break
+  
+
+default:
+  dias = "Mes erroneo"
+
+}
+
+console.log(dias + " dias");
+console.log()
